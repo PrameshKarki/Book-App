@@ -20,27 +20,23 @@
                 <input type="text" name="authors-name" id="authors-name">
                 <label for="isbn-number">ISBN# :</label>
                 <input type="text" name="isbn-number" id="isbn-number">
-                <button id="btn">Add Book</button>
+                <input type="submit" value="Add a Book" id="add-book-btn">
             </form>
         </div>
-            <div class="table-container">
-                <table class="book-container">
+        <div class="table-container">
+            <table class="book-container">
+                <thead>
+
                     <tr>
-                        <th>S.N</th>
                         <th>Book Name</th>
                         <th>Author's Name</th>
                         <th>ISBN</th>
                         <th></th>
-                    <!-- </tr>
-                        <td>1</td>
-                        <td>Programmin in C</td>
-                        <td>Pramesh karki</td>
-                        <td>01-01-01</td>
-                        <td><button class="remove-button">X</button></td>
-                    </tr> -->
-                </table>
-            </div>
-        
+                </thead>
+                <tbody id="book-list"></tbody>
+            </table>
+        </div>
+
     </main>
     <script src="./script.js"></script>
 </body>
